@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Scrolls & Sizzle Spots</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="navbar.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-amber-900 to-amber-700">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="relative z-10 text-center px-4">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Savory Scrolls & Sizzle Spots</h1>
+                <p class="text-xl md:text-2xl text-amber-100 mb-8 max-w-3xl mx-auto">Where every bite tells a story and every meal is a masterpiece</p>
+                <div class="flex gap-4 justify-center">
+                    <a href="menu.html" class="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-full transition-all transform hover:scale-105">View Menu</a>
+                    <a href="reservation.html" class="px-8 py-3 bg-white hover:bg-gray-100 text-amber-800 font-medium rounded-full transition-all transform hover:scale-105">Make Reservation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Dishes -->
+        <section class="py-20 px-4 max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-12">Our Signature Creations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="dish-card group">
+                    <img src="http://static.photos/food/640x360/1" alt="Signature Dish" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6 bg-white rounded-b-lg border border-gray-200 group-hover:border-amber-400 transition-all">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Truffle Infused Ribeye</h3>
+                        <p class="text-gray-600 mb-4">Premium cut with wild mushroom ragout and truffle butter</p>
+                        <span class="text-amber-600 font-medium">$42</span>
+                    </div>
+                </div>
+                <div class="dish-card group">
+                    <img src="http://static.photos/food/640x360/2" alt="Signature Dish" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6 bg-white rounded-b-lg border border-gray-200 group-hover:border-amber-400 transition-all">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Seafood Linguine</h3>
+                        <p class="text-gray-600 mb-4">Fresh catch with garlic white wine sauce and cherry tomatoes</p>
+                        <span class="text-amber-600 font-medium">$36</span>
+                    </div>
+                </div>
+                <div class="dish-card group">
+                    <img src="http://static.photos/food/640x360/3" alt="Signature Dish" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6 bg-white rounded-b-lg border border-gray-200 group-hover:border-amber-400 transition-all">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Chocolate Soufflé</h3>
+                        <p class="text-gray-600 mb-4">Warm chocolate center with vanilla bean ice cream</p>
+                        <span class="text-amber-600 font-medium">$14</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 bg-amber-50">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="http://static.photos/restaurant/640x360/1" alt="Restaurant Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-6">Our Story</h2>
+                    <p class="text-gray-700 mb-4">Founded in 2010, Savory Scrolls & Sizzle Spots began as a small bistro with big dreams. Our chef, Marco Bellini, brings 25 years of culinary expertise from kitchens around the world.</p>
+                    <p class="text-gray-700 mb-6">We source only the finest local ingredients and combine them with innovative techniques to create unforgettable dining experiences.</p>
+                    <a href="about.html" class="inline-flex items-center text-amber-700 font-medium hover:text-amber-900 transition-colors">
+                        Read More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 px-4 max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-12">What Our Guests Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/1" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <div class="flex text-amber-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The truffle ribeye was absolutely divine! Perfectly cooked and the flavors were incredible. Service was impeccable too."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/2" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                            <div class="flex text-amber-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Celebrated our anniversary here and it was magical. The sommelier's wine pairing was spot on with each course."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/3" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emma Rodriguez</h4>
+                            <div class="flex text-amber-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The tasting menu was an adventure for the senses. Every dish was a work of art that tasted even better than it looked!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation CTA -->
+        <section class="py-20 bg-amber-900 text-white">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for an Unforgettable Dining Experience?</h2>
+                <p class="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">Book your table now and let us take you on a culinary journey</p>
+                <a href="reservation.html" class="inline-block px-8 py-3 bg-white hover:bg-gray-100 text-amber-800 font-medium rounded-full transition-all transform hover:scale-105">Reserve Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-400">Savory Scrolls & Sizzle Spots</h3>
+                    <p class="text-gray-400">123 Gourmet Avenue<br>Foodie City, FC 12345</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Hours</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Monday - Thursday: 5pm - 10pm</li>
+                        <li>Friday - Saturday: 5pm - 11pm</li>
+                        <li>Sunday: 4pm - 9pm</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@savoryscrolls.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Savory Scrolls & Sizzle Spots. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
