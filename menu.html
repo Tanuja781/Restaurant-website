@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Savory Scrolls & Sizzle Spots</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="navbar.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="pt-24 pb-20">
+        <!-- Menu Header -->
+        <section class="relative py-20 bg-gradient-to-r from-amber-900 to-amber-700">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Our Menu</h1>
+                <p class="text-xl text-amber-100">Seasonal ingredients crafted with passion</p>
+            </div>
+        </section>
+
+        <!-- Menu Navigation -->
+        <div class="sticky top-24 z-10 bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex overflow-x-auto py-4 space-x-6">
+                    <a href="#starters" class="whitespace-nowrap px-4 py-2 text-amber-800 font-medium border-b-2 border-amber-600">Starters</a>
+                    <a href="#mains" class="whitespace-nowrap px-4 py-2 text-gray-600 hover:text-amber-800 font-medium">Main Courses</a>
+                    <a href="#desserts" class="whitespace-nowrap px-4 py-2 text-gray-600 hover:text-amber-800 font-medium">Desserts</a>
+                    <a href="#drinks" class="whitespace-nowrap px-4 py-2 text-gray-600 hover:text-amber-800 font-medium">Drinks</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Starters -->
+        <section id="starters" class="py-16 px-4 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-amber-900 mb-8 text-center">Starters</h2>
+            <div class="space-y-8">
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Truffle Arancini</h3>
+                            <p class="text-gray-600">Crispy risotto balls with black truffle and fontina cheese</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$14</span>
+                    </div>
+                </div>
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Burrata Salad</h3>
+                            <p class="text-gray-600">Creamy burrata with heirloom tomatoes, basil, and aged balsamic</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$16</span>
+                    </div>
+                </div>
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Seared Scallops</h3>
+                            <p class="text-gray-600">With cauliflower purée, pancetta, and brown butter</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$18</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mains -->
+        <section id="mains" class="py-16 px-4 max-w-4xl mx-auto bg-amber-50">
+            <h2 class="text-3xl font-bold text-amber-900 mb-8 text-center">Main Courses</h2>
+            <div class="space-y-8">
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Truffle Infused Ribeye</h3>
+                            <p class="text-gray-600">12oz prime ribeye with wild mushroom ragout and truffle butter</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$42</span>
+                    </div>
+                </div>
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Seafood Linguine</h3>
+                            <p class="text-gray-600">Fresh catch with garlic white wine sauce and cherry tomatoes</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$36</span>
+                    </div>
+                </div>
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Duck Confit</h3>
+                            <p class="text-gray-600">With cherry reduction, roasted fingerlings, and wilted greens</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$38</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts -->
+        <section id="desserts" class="py-16 px-4 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-amber-900 mb-8 text-center">Desserts</h2>
+            <div class="space-y-8">
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Chocolate Soufflé</h3>
+                            <p class="text-gray-600">Warm chocolate center with vanilla bean ice cream</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$14</span>
+                    </div>
+                </div>
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Crème Brûlée</h3>
+                            <p class="text-gray-600">Classic vanilla bean with caramelized sugar crust</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$12</span>
+                    </div>
+                </div>
+                <div class="menu-item group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Seasonal Fruit Tart</h3>
+                            <p class="text-gray-600">With pastry cream and berry coulis</p>
+                        </div>
+                        <span class="text-amber-600 font-medium">$11</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks -->
+        <section id="drinks" class="py-16 px-4 max-w-4xl mx-auto bg-amber-50">
+            <h2 class="text-3xl font-bold text-amber-900 mb-8 text-center">Drinks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Wines</h3>
+                    <div class="space-y-6">
+                        <div class="menu-item group">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Château Margaux 2015</h4>
+                                    <p class="text-gray-600">Bordeaux, France</p>
+                                </div>
+                                <span class="text-amber-600 font-medium">$180</span>
+                            </div>
+                        </div>
+                        <div class="menu-item group">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Domaine Leflaive Puligny-Montrachet 2018</h4>
+                                    <p class="text-gray-600">Burgundy, France</p>
+                                </div>
+                                <span class="text-amber-600 font-medium">$160</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Cocktails</h3>
+                    <div class="space-y-6">
+                        <div class="menu-item group">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Savory Old Fashioned</h4>
+                                    <p class="text-gray-600">Bourbon, maple, black walnut bitters</p>
+                                </div>
+                                <span class="text-amber-600 font-medium">$16</span>
+                            </div>
+                        </div>
+                        <div class="menu-item group">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 group-hover:text-amber-700 transition-colors">Spiced Pear Martini</h4>
+                                    <p class="text-gray-600">Gin, pear liqueur, lemon, cardamom</p>
+                                </div>
+                                <span class="text-amber-600 font-medium">$15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-16 px-4 text-center">
+            <h2 class="text-3xl font-bold text-amber-900 mb-6">Ready to experience our flavors?</h2>
+            <a href="reservation.html" class="inline-block px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-full transition-all transform hover:scale-105">Reserve Your Table</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-400">Savory Scrolls & Sizzle Spots</h3>
+                    <p class="text-gray-400">123 Gourmet Avenue<br>Foodie City, FC 12345</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Hours</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Monday - Thursday: 5pm - 10pm</li>
+                        <li>Friday - Saturday: 5pm - 11pm</li>
+                        <li>Sunday: 4pm - 9pm</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@savoryscrolls.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Savory Scrolls & Sizzle Spots. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Highlight active menu section
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuLinks = document.querySelectorAll('a[href^="#"]');
+            
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Update active link
+                        menuLinks.forEach(l => {
+                            l.classList.remove('text-amber-800', 'border-b-2', 'border-amber-600');
+                            l.classList.add('text-gray-600');
+                        });
+                        
+                        this.classList.add('text-amber-800', 'border-b-2', 'border-amber-600');
+                        this.classList.remove('text-gray-600');
+                    }
+                });
+            });
+            
+            // Update active link on scroll
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY + 150;
+                
+                document.querySelectorAll('section[id]').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        menuLinks.forEach(link => {
+                            link.classList.remove('text-amber-800', 'border-b-2', 'border-amber-600');
+                            link.classList.add('text-gray-600');
+                            
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.add('text-amber-800', 'border-b-2', 'border-amber-600');
+                                link.classList.remove('text-gray-600');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
